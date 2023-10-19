@@ -1,0 +1,579 @@
+/* ------------ GLOBAL STYLES ------------ */
+
+html { overflow-y: scroll; 
+	overflow-x: hidden;
+	width: fit-content;
+	height: fit-content;
+	}
+
+body {
+	margin: 0;
+	background-image: url(background.jpg);
+}
+
+header{
+	/* background-color: grey; */
+	margin: 0px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header img {
+	margin-left: 20px;
+}
+
+footer{
+	margin: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	border-top: 1px solid grey;
+	color: white;
+	/* text-align: center; */
+}
+
+footer ul{
+	margin: 20px 0 20px 0;
+	list-style: none;
+	justify-content: space-around;
+	color: white;
+	font-size: 20px;
+}
+
+footer p {
+	text-align: center;
+	color: grey;
+}
+
+/* ----------------------------------------------------- FIRST SECTION STYLES ---- ( H O M E ) ------------------------------------------------- */
+
+.firstSection {
+	background-image: url(erkrath6.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	width: auto;
+	margin: 0 30px 30px 30px;
+	/* object-fit: cover;
+	filter: brightness(0.5); */
+}
+
+.headline1{
+	position: absolute;
+	left: 50px;
+	top: 320px;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	font-size: 50px;
+	width: 500px;
+	text-shadow: 10px 10px 5px rgb(0,0,0, 0.8);
+}
+
+.headline2{
+	position: absolute;
+	left: 50px;
+	top: 580px;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	font-size: 30px;
+	text-shadow: 5px 5px 5px rgb(0,0,0, 0.8);
+}
+
+/* ----------------------------------------------------- SECOND SECTION STYLES ---- (G A L L E R Y ) ------------------------------------------------- */
+
+.h2headline{
+	margin-bottom: 0;
+	margin-top: 0;
+	text-align: center;
+	font-family: 'Rubik', sans-serif;
+	font-size: 45px;
+	color: white;
+	text-shadow: 5px 5px 5px rgb(0,0,0, 0.8);
+}
+
+.h3headline{
+	margin-bottom: 1vh;
+	margin-top: 0;
+	text-align: center;
+	font-family: 'Rubik', sans-serif;
+	font-size: 30px;
+	color: white;
+	text-shadow: 5px 5px 5px rgb(0,0,0, 0.8);
+}
+
+/*--------- vielleicht nicht nötig ------\/------*/
+.descriptionSection2{
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	height: 50vh;
+	padding-bottom: 30px;
+	padding-top: 10px;
+}
+
+.descriptionSection2 p {
+	float: left;
+	width: 60%;
+	height: 20px;
+	margin: 0 16px 0 16px;
+	color: white;
+	font-family: 'Rubik', sans-serif;
+	font-size: 22px;
+	line-height: 25px;
+}
+/*--------- vielleicht nicht nötig ------/\------*/
+
+  .galleryContainer {
+	height: auto;
+    flex: 1 1 calc(33.333% - 20px);
+    margin: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.navigation {
+    position: relative;
+}
+
+/* --------------- GALLERY STYLES -------------- */
+
+.prev {
+    left: 0;
+	z-index: 10;
+  	border-top-left-radius: 10px;
+  	border-bottom-left-radius: 10px; 
+}
+
+.imageContainer {
+	width: 60vh;
+	height: 50vh;
+	overflow: hidden;
+	position: relative;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.image-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.image-wrapper img.active {
+  display: block;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.button:hover{
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.next {
+    right: 0;
+	z-index: 10;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+/* prev next button icon größe */
+.fas {
+    font-size: 24px;
+}
+
+/* ---- anordnung der gallerycontainer ---- */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.imageCaption {
+    text-align: center; /* Zentriert den Text */
+    margin-top: 5px; /* Fügt einen kleinen Abstand zwischen dem Bild und der Bildunterschrift hinzu */
+    font-family: 'Rubik', sans-serif; /* Ihr bevorzugter Font */
+    font-size: 18px; /* Die gewünschte Schriftgröße */
+    color: white; /* Schriftfarbe, hier weiß */
+    background-color: rgba(0, 0, 0, 0.7); /* Optional: Hintergrundfarbe für die Bildunterschrift */
+    padding: 10px; /* Platz um den Text herum, macht die Bildunterschrift lesbarer */
+}
+
+
+
+/* ----------------------------------------------------- THIRD SECTION STYLES ---- (S E R V I C E S) ------------------------------------------------- */
+
+.thirdSection{
+	margin-top: 50px;
+	height: auto;
+}
+
+.descriptionSection3{
+	margin: 0 16px 16px 16px;
+	color: white;
+	font-size: 22px;
+	height: auto;
+	width: auto;
+}
+
+.descriptionSection3 p {
+	height: auto;
+	width: auto;
+	color: white;
+	font-family: 'Rubik', sans-serif;
+	font-size: 22px;
+	line-height: 25px;
+}
+
+.leistungenText2{
+	display: none;
+}
+
+/* ----------------------------------------------------- FOURTH SECTION ---- ( L O C A T I O N ) ------------------------------------------------- */
+
+/* .fourthSection{
+	width: 100%;
+	height: auto;
+} */
+
+.descriptionSection4{
+	display: flex;
+	/* justify-content: space-between; */
+	margin: 22px 0 0 0;
+	color: white;
+	font-family: 'Rubik', sans-serif;
+	font-size: 22px;
+}
+
+.descriptionSection4 p {
+	float: left;
+	width: 85%;
+	height: auto;
+	margin: 0 0 0 16px;
+	line-height: 25px;
+}
+
+.descriptionSection4 iframe {
+	float: right;
+	width: 65%;
+	height: 300px;
+	margin: 2px 0 0 350px;
+}
+
+.descriptionSection4 figure {
+    width: 100%; 
+    max-width: 100%;
+    margin: 0;
+	margin: 0 16px 0 0;
+}
+
+.descriptionSection4 figcaption {
+	float: right;
+	margin: 25px 0 0 380px;
+}
+
+.locationIframe{
+	flex-direction: column;
+	display: flex;
+	float: right;
+	width: 100%; 
+    max-width: 100%;
+    margin: 0;
+}
+
+/* ----------------------------------------------------- FIFTH SECTION ---- ( A B O U T ) ------------------------------------------------- */
+
+
+
+/* ----------------------------------------------------- NAVIGATION LINKS STYLES ----------------------------------------------------- */
+
+.containerLinks{
+	font-family: 'Rubik', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    padding: 10px 0 10px 10px;
+    border-radius: 20px;
+	transition: 0.7s ease;
+}
+
+.containerLinks a {
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 900;
+}
+
+.containerLinks a:hover {
+	color: grey;
+}
+
+li{
+	list-style: none;
+}
+
+.nav-menu{
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 60px;
+    padding: 10px;
+    border-radius: 20px;
+	transition: 0.7s ease;
+}
+
+.nav-link{
+	transition: 0.7s ease;
+}
+
+
+/* ----------------------------------------------------- MEDIA QUERIES ----------------------------------------------------- */
+
+
+
+/* ------------ NAV BAR BURGER MENU ------------- */
+.hamburger{
+	display: none;
+	cursor: pointer;
+}
+
+.bar{
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background-color: white;
+}
+
+@media screen and (max-width: 768px){
+
+	.hamburger{
+		display: block;
+	}
+	
+	.hamburger.active .bar:nth-child(2){
+		opacity: 0;
+	}
+
+	.hamburger.active .bar:nth-child(1){
+		transform: translateY(8px) rotate(45deg);
+	}
+
+	.hamburger.active .bar:nth-child(3){
+		transform: translateY(-8px) rotate(-45deg);
+	}
+
+	.nav-menu{
+		position: fixed;
+		right: -1000px;
+		top: 50px;
+		gap: 0;
+		flex-direction: column;
+		background-image: url(img/background.jpg);
+		width: 100%;
+		text-align: center;
+		transition: 0.3s;
+	}
+
+	.nav-item{
+		margin: 16px 0;
+	}
+
+	.nav-menu.active{
+		right: 0;
+	}
+}
+
+/* ---------------------- REST -------------------------- */
+
+.headline3{
+	display: none;
+}
+
+@media screen and (max-width: 768px){
+
+	/*FIRST SECTION*/
+	header img{
+		height: 70px;
+		width: 90px;
+	}
+
+	.headline1 {
+		display: none;
+	}
+	
+	.headline2 {
+		display: none;
+	}
+
+	.headline3{
+	display: block;
+	position: absolute;
+	left: 30px;
+	top: 320px;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	font-size: 40px;
+	width: 400px;
+	text-shadow: 10px 10px 5px rgb(0,0,0, 0.8);
+	}
+
+	/*SECOND SECTION*/
+
+.h2headline{
+	text-align: center;
+	bottom: 0;
+	font-size: 20px;
+	margin-top: 20px;
+}
+
+.imageContainer {
+	width: 35vh;
+	height: 35vh;
+	overflow: hidden;
+}
+
+.descriptionSection2{
+	height: min-content;
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+}
+
+.descriptionSection2 p {
+	display: none;
+}
+
+
+.galleryContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prev{
+	padding: 10px;
+}
+
+.prev i{
+	font-size: 12px;
+}
+
+.next{
+	padding: 10px;
+}
+
+.next i{
+	font-size: 12px;
+}
+
+
+.image-wrapper img {
+	width: 35vh;
+	height: 35vh;
+}
+
+
+/*------------------------THIRD SECTION-------------------------------*/
+
+.leistungentext1 {
+	display: none;
+}
+
+.descriptionSection3{
+	margin: 0;
+}
+
+.descriptionLocation{
+	display: none;
+}
+
+.leistungenText2{
+	display: block;
+	font-size: 12px;
+	margin: 0;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+}
+
+.leistungen2Liste{
+	list-style: circle;
+}
+
+.leistungen2Liste li {
+	color: grey;
+}
+
+.leistungen2Liste li span {
+	color: white;
+	text-decoration: none !important;
+}
+
+
+/*FOURTH SECTION*/
+
+.descriptionSection4{
+	justify-content: center;
+	height: auto;
+	padding: auto;
+}
+
+
+.descriptionSection4 iframe{
+	width: fit-content;
+	height: fit-content;
+	align-items: center;
+	margin: 0;
+}
+
+.descriptionSection4p {
+	display: none;
+}
+
+
+/*--------FOOTER----------*/
+
+footer{
+	border-top: 1px solid grey;
+	color: white;
+	/* text-align: center; */
+}
+
+footer ul{
+	font-size: 13px !important;
+	display: flex;
+	flex-direction: row;
+	margin: 20px 0 20px 0;
+	list-style: none;
+	justify-content: space-around;
+	color: white;
+	font-size: 20px;
+}
+
+footer p {
+	font-size: 12px;
+}
+
+}
